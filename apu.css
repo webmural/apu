@@ -10,9 +10,8 @@
 
 :focus {
   text-decoration-style: double;
-  outline-style: dotted;
-  outline-width: 1ex;
-  outline-color: purple;
+  outline: 3em dotted chocolate;
+  box-shadow: 0 0 0 2em #ec0;
 }
 
 ::selection {
@@ -33,6 +32,26 @@
 .soar {
   background: blueviolet;
   color: mistyrose;
+}
+
+.kwik {
+  background: chocolate;
+  color: #111;
+}
+
+.bart {
+  background: chartreuse;
+  color: #111;
+}
+
+.mart {
+  background: silver;
+  color: #111;
+}
+
+.tram {
+  background: #ee1;
+  color: #111;
 }
 
 .oslo {
@@ -60,7 +79,7 @@ html {
 body {
   display: flex;
   flex-flow: column;
-  margin: 2rem auto;
+  margin: 5em auto;
 }
 
 a {
@@ -82,21 +101,23 @@ figure {
 figure > * {
   display: initial;
   margin: auto;
-  padding: 0;
 }
 
 .left { margin-left: 1em }
 .rite { margin-right: 1em }
 
-h1 {
+strong {
   align-self: center;
   border-radius: 100%;
+  font-size: 1.618em;
 }
 
 footer {
   margin: 2rem;
 }
 
-samp {
-  font-family: fantasy;
+@media (prefers-reduced-motion: reduce) {
+  [class] {
+    transition: none;
+  }
 }
